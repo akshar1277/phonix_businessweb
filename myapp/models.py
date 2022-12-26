@@ -17,7 +17,7 @@ class Contact(models.Model):
     description=models.CharField(max_length=500,null=True)
 
     def __str__(self):
-        return self.Project_name
+        return self.first_name
     
     class Meta:
         verbose_name = "Contact Us"
